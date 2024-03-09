@@ -8,10 +8,10 @@ import { useNavigation } from '@react-navigation/native';
 
 
 const data = [
-    { id: '1', title: 'Hindhi', learners:"43.1M learners",imageUrl:FlagOfIndiaImage },
+    { id: '1', title: 'हिंदी', learners:"43.1M learners",imageUrl:FlagOfIndiaImage },
     { id: '2', title: 'English',learners:"43.1M learners",imageUrl:FlagOfAmericaImage },
-    { id: '3', title: 'Spanish',learners:"43.1M learners",imageUrl:FlagOfSpanishImage },
-    { id: '4', title: 'Germany',learners:"43.1M learners",imageUrl:FlagOfGermanyImage },
+    { id: '3', title: 'Español',learners:"43.1M learners",imageUrl:FlagOfSpanishImage },
+    { id: '4', title: 'Deutsch',learners:"43.1M learners",imageUrl:FlagOfGermanyImage },
     // Add more data as needed
 ];
 
@@ -19,7 +19,7 @@ const Intro2 = () => {
     const navigation = useNavigation();
     const renderItem = ({ item }) => (
        
-        <TouchableOpacity  style={styles.item} onPress={()=>navigation.navigate("BottomNavigator")}>
+        <TouchableOpacity  style={styles.item} onPress={()=>navigation.navigate("LanguageExperience")}>
         <Image source={item.imageUrl} style={styles.image} />
         <Text style={styles.title}>{item.title}</Text>
         <Text style={styles.subtext}>{item.learners}</Text>

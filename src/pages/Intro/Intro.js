@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <View style={styles.container}>
 
-      <Image source={Headerlogo2}  style={styles.image}/>
+      {/* <Image source={Headerlogo2}  style={styles.image}/> */}
       <Text style={styles.txt}>I want to learn...</Text>
       <View>
       <Flag/>
