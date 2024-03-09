@@ -13,6 +13,8 @@ const Stack = createStackNavigator();
 import Home from "./src/pages/Home";
 import Dialog from "./src/pages/Dialog";
 import Profile from "./src/pages/Profile";
+import Languages from "./src/pages/screens/Languages";
+import LanguageExperience from "./src/pages/screens/LanguageExperience";
 
 const Tab = createBottomTabNavigator();
 
@@ -38,8 +40,13 @@ export default function App() {
 
 function HomePage() {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="BottomNavigator" component={BottomNavigator} />
+    <Stack.Navigator
+    initialRouteName="LanguageExperience"
+     screenOptions={{ headerShown: false }}>
+
+      <Stack.Screen name="Languages" component={Languages} />
+      <Stack.Screen name="LanguageExperience" component={LanguageExperience} />
+     
       <Stack.Screen
         name="ExercisePage"
         component={ExercisePage}
