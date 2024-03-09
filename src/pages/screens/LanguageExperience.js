@@ -12,7 +12,7 @@ export default function LanguageExperience() {
 
     const renderItem = ({ item }) => (
        
-        <TouchableOpacity onPress={()=>navigation.navigate("ExercisePage")} style={styles.item}>
+        <TouchableOpacity onPress={()=>navigation.navigate("BottomNavigator")} style={styles.item}>
         <Image source={item.imageUrl} style={styles.image} />
         <Text style={styles.title}>{item.text}</Text>
         </TouchableOpacity>

@@ -13,6 +13,8 @@ const Stack = createStackNavigator();
 import Home from "./src/pages/Home";
 import Dialog from "./src/pages/Dialog";
 import Profile from "./src/pages/Profile";
+import Intro from "./src/pages/Intro/Intro";
+import Intro2 from "./src/pages/Intro2/Intro2";
 import Languages from "./src/pages/screens/Languages";
 import LanguageExperience from "./src/pages/screens/LanguageExperience";
 
@@ -40,13 +42,21 @@ export default function App() {
 
 function HomePage() {
   return (
-    <Stack.Navigator
-    initialRouteName="LanguageExperience"
-     screenOptions={{ headerShown: false }}>
+
+    <Stack.Navigator 
+    initialRouteName="Intro"
+    screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Intro" component={Intro} />
+      <Stack.Screen name="Intro2" component={Intro2} />
+
+
+      <Stack.Screen name="BottomNavigator" component={BottomNavigator} />
+
 
       <Stack.Screen name="Languages" component={Languages} />
       <Stack.Screen name="LanguageExperience" component={LanguageExperience} />
      
+
       <Stack.Screen
         name="ExercisePage"
         component={ExercisePage}
