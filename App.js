@@ -19,6 +19,7 @@ import Languages from "./src/pages/screens/Languages";
 import LanguageExperience from "./src/pages/screens/LanguageExperience";
 import Home2 from "./src/pages/Home2/Home2";
 
+import Learn from "./src/pages/screens/Learn";
 
 const Tab = createBottomTabNavigator();
 
@@ -50,6 +51,7 @@ function HomePage() {
     screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Intro" component={Intro} />
       <Stack.Screen name="Intro2" component={Intro2} />
+      <Stack.Screen name="Learn" component={Learn} />
 
 
       <Stack.Screen name="BottomNavigator" component={BottomNavigator} />

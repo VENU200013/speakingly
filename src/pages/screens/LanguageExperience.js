@@ -39,7 +39,6 @@ export default function LanguageExperience() {
 }
 const styles = StyleSheet.create({
     item: {
-    marginTop: StatusBar.currentHeight,
       backgroundColor: '',
       padding: 30,
       marginVertical: 8,
