@@ -17,6 +17,8 @@ import Intro from "./src/pages/Intro/Intro";
 import Intro2 from "./src/pages/Intro2/Intro2";
 import Languages from "./src/pages/screens/Languages";
 import LanguageExperience from "./src/pages/screens/LanguageExperience";
+import Home2 from "./src/pages/Home2/Home2";
+
 
 const Tab = createBottomTabNavigator();
 
@@ -54,6 +56,8 @@ function HomePage() {
 
 
       <Stack.Screen name="Languages" component={Languages} />
+      <Stack.Screen name="Home2" component={Home2} />
+
       <Stack.Screen name="LanguageExperience" component={LanguageExperience} />
      
 

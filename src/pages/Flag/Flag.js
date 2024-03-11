@@ -8,7 +8,7 @@ import { useNavigation } from '@react-navigation/native';
 
 
 const data = [
-    { id: '1', title: 'Hindhi', learners:"43.1M learners",imageUrl:FlagOfIndiaImage },
+    { id: '1', title: 'Hindi', learners:"43.1M learners",imageUrl:FlagOfIndiaImage },
     { id: '2', title: 'English',learners:"43.1M learners",imageUrl:FlagOfAmericaImage },
     { id: '3', title: 'Spanish',learners:"43.1M learners",imageUrl:FlagOfSpanishImage },
     { id: '4', title: 'Germany',learners:"43.1M learners",imageUrl:FlagOfGermanyImage },
