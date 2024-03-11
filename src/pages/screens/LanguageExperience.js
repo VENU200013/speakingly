@@ -5,24 +5,24 @@ import image2 from "../../../assets/duolingo_bird2.png"
 import { useNavigation } from '@react-navigation/native'
 
 const data=[
-{imageUrl:image1,id:0,text:"Lerning English at the first time"},
-{imageUrl:image2,id:1,text:"Already i have some knowledge in English"}]
+{imageUrl:image1,id:0},
+{imageUrl:image2,id:1}]
 export default function LanguageExperience() {
    const navigation= useNavigation();
 
     const renderItem = ({ item }) => (
        
-        <TouchableOpacity onPress={()=>navigation.navigate("BottomNavigator")} style={styles.item}>
+        <TouchableOpacity onPress={()=>navigation.navigate("Learn")} style={styles.item}>
         <Image source={item.imageUrl} style={styles.image} />
-        <Text style={styles.title}>{item.text}</Text>
+        <Text style={styles.title}>Lern first time</Text>
+        <Text style={styles.subtext}>Lern not first time</Text>
         </TouchableOpacity>
     
    
  );
   return (
     <View style={{marginTop: StatusBar.currentHeight,}}>
-
-     <Text style={{textAlign:'center', fontSize:30}}>Choose your path</Text>
+     <Text style={{textAlign:'center', fontSize:30, textDecorationLine:"underline",textDecorationColor:'grey'}}>Choose your path</Text>
    <FlatList
        data={data}
        renderItem={renderItem}
